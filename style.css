@@ -65,7 +65,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background: url('Robin.jpeg') no-repeat center center/cover;
+    background: url('Robin.jpg') no-repeat center center/cover;
     height: 60vh;
     color: rgb(0, 0, 0);
     display: flex;
