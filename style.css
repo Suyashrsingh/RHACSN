@@ -65,7 +65,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background-color: blue;
+    background-color: rgb(146, 146, 211);
     height: 60vh;
     color: rgb(0, 0, 0);
     display: flex;
