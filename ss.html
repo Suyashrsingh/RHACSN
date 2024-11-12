@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin Hood Army - Monthly Drives</title>
+    <link rel="stylesheet" href="cc.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            
+            <h1><b>Robin Hood Army</b></h1>
+            
+        </div>
+    </header>
+
+    <!-- Year & Month Selection -->
+    <section id="drives" class="section">
+        <div class="container">
+            <h2>Robin Hood Army Monthly Drives</h2>
+            <br>
+            <br>
+            <br>
+            
+            <!-- Year Selection -->
+             <center>
+            <label for="year">Select Year:</label>
+            <select id="year" onchange="updateMonthDropdown()">
+                <option value="">-- Select Year --</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+            </select>
+            
+            <!-- Month Selection (hidden until a year is selected) -->
+            <label for="month" id="monthLabel" class="select" style="display:none;">Select Month:</label>
+            <select id="month" style="display:none;" onchange="displayDriveData()">
+                <option value="">-- Select Month --</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+             </center>
+            <!-- Drive Data will be displayed here -->
+            <div id="drive-details" style="display:none;">
+                <h3>Drive Details:</h3>
+               
+                <div id="driveContent"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="above-footer">
+        <img src="robinimg.jpg" alt="Image not found...." >
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Robin Hood Army | All Rights Reserved</p>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
